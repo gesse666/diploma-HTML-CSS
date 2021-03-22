@@ -135,7 +135,7 @@ html, body {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 28px;
-	padding-bottom: 8px;
+	padding-bottom: 7px;
 }
 
 @media (max-width:1200px) {
@@ -178,6 +178,9 @@ line-height: 5px;
 text-decoration: none;
 display: inline-block;
 padding-top: 13px;
+-webkit-transition: 0.3s;
+-moz--transition: 0.3s;
+transition: 0.3s;
 }
 
 @media (max-width:1200px) {
@@ -200,6 +203,7 @@ padding-top: 13px;
 .menu__link:hover::after {
 	width: 100%;
 	background-color: #fa098f;
+	
 }
 
 .menu__link:hover {
@@ -232,6 +236,11 @@ padding-top: 13px;
 	}
 }
 
+.site-header__offer {
+	display: flex;
+	align-items: center;
+}
+
 @media (max-width:1200px) {
 	.site-header__offer {
 		align-self: flex-start;
@@ -245,6 +254,7 @@ font-weight: 700;
 text-decoration: none;
 padding-right: 26px;
 letter-spacing: 0.2px;
+transition: 0.3s;
 }
 
 @media (max-width:1200px) {
@@ -269,6 +279,7 @@ letter-spacing: 0.2px;
 	background: #ffffff00;
 	border: #f53f4f 1px solid;
 	font-size: 16px;
+	transition: all 0.3s;
 }
 
 .empty-button:hover {
@@ -278,10 +289,12 @@ letter-spacing: 0.2px;
 }
 
 .site-header__button {
-	padding: 12px 40px;
-	background: #ffffff00;
-	border: #f53f4f 1px solid;
-	font-size: 16px;
+	padding: 13px 40px;
+    background: #ffffff00;
+    border: #f53f4f 1px solid;
+    font-size: 16px;
+    color: #f53f4f;
+	transition: all 0.3s;
 }
 
 @media (max-width:900px) {
@@ -314,6 +327,20 @@ letter-spacing: 0.2px;
 			/* text-align: center;
 			overflow: hidden; */
 		/* -webkit-box-decoration-break: clone; */
+		display: inline-block;
+		align-self: center;
+		width: 30px;
+		height: 30px;
+		padding: 2px;
+		padding-left: 5px;
+		font-size: 23px;
+		background: linear-gradient(180deg, #fa098f,  #f36034);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		border: 1px solid #fa098f; 
+		border-radius: 100%;
+		text-align: center;
+		overflow: hidden;	
 	}
 }
 
@@ -332,6 +359,7 @@ letter-spacing: 0.2px;
 .site-header__button:hover {
 	color: #ffffff;
 	background: linear-gradient(180deg, #fa098f,  #f36034);
+	transition: all 0.3s;
 }
 
 .site-header__button:hover:before {
@@ -434,6 +462,7 @@ letter-spacing: 0.2px;
 	color: #ffffff;
 	border: none;
 	border: #ff4e2e solid 1px;
+	transition: all 0.3s;
 }
 
 .full-button:hover {
@@ -445,7 +474,7 @@ letter-spacing: 0.2px;
 
 .person__button {
 	margin-top: 31px;
-    padding: 17px 70px;
+    padding: 18px 70px;
     font-size: 18px;
 }
 
@@ -527,7 +556,7 @@ letter-spacing: 0.2px;
 
 .skills__title {
 	font-size: 54px;
-    padding-top: 88px;
+    padding-top: 89px;
 	margin-bottom: 0;
 	text-align: center;
 }
@@ -591,7 +620,7 @@ letter-spacing: 0.2px;
 .skills__subtitle {
 	text-align: center;
     font-size: 21px;
-    margin-top: 87px;
+    margin-top: 89px;
     margin-bottom: 0;
     list-style: none;
     display: flex;
@@ -668,7 +697,7 @@ letter-spacing: 0.2px;
 
 .skills__button {
 	margin-top: 95px;
-    padding: 18px 59px;
+    padding: 19px 59px;
     font-size: 18px;
 }
 
@@ -705,7 +734,7 @@ letter-spacing: 0.2px;
 }
 
 .card__text {
-    padding-top: 28px;
+    padding-top: 31px;
     text-align: center;
     font-size: 20px;
     font-family: 'Roboto - Medium', sans-serif;
@@ -836,7 +865,7 @@ letter-spacing: 0.2px;
 	padding: 0 26px;
 	position: relative;
 	margin: 0 auto;
-	padding-top: 88px;
+	padding-top: 92px;
 }
 
 @media (max-width:1750px) {
@@ -892,10 +921,11 @@ letter-spacing: 0.2px;
 }
 
 .examples__title {
-    font-size: 55px;
+    font-size: 53px;
 	margin-bottom: 0;
 	text-align: center;
 	margin-bottom: 100px;
+	letter-spacing: 1px;
 }
 
 @media (max-width:650px) {
@@ -1021,6 +1051,7 @@ font-size: 20px;
 
 .footer-menu__item {
 	padding-bottom: 20px;
+	padding-right: 115px;
 }
 
 @media (max-width:650px) {
@@ -1033,8 +1064,10 @@ font-size: 20px;
 	display: flex;
     flex-direction: column;
     line-height: 37px;
-	word-spacing: 2px;
-	min-width: 310px;
+    word-spacing: 2px;
+    letter-spacing: 0px;
+    min-width: 310px;
+    padding-top: 2px;
 }
 
 @media (max-width:650px) {
@@ -1055,6 +1088,7 @@ font-size: 20px;
 	color: #000000;
 	font-size: 25px;
 	padding-bottom: 22px;
+	transition: all 0.3s;
 }
 
 .contacts__mail:hover,
@@ -1079,6 +1113,7 @@ font-size: 20px;
 	background: linear-gradient(180deg, #fa098f,  #f36034);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: #ffffff00;
+	font-size: 25px;
 }
 
 @media (max-width:650px) {
@@ -1090,6 +1125,7 @@ font-size: 20px;
 .contacts__mail {
 	color: #000000;
 	font-size: 25px;
+	transition: all 0.3s;
 }
 
 @media (max-width:650px) {
@@ -1102,7 +1138,7 @@ font-size: 20px;
 .contacts__mail::before {
 	content: "\f0e0 \00a0 \00a0";
 	word-spacing: 4px;
-	font-size: 24px;
+	font-size: 25px;
 	font-family: FontAwesome;
 	background: linear-gradient(180deg, #fa098f,  #f36034);
 	-webkit-background-clip: text;
@@ -1122,6 +1158,9 @@ font-size: 20px;
 .footer-menu__link {
 	color: #8993ad;
 	display: inline-block;
+	-webkit-transition: 0.3s;
+    -moz--transition: 0.3s;
+	transition: 0.3s;
 }
 
 .footer-menu__link::after {
@@ -1182,6 +1221,7 @@ font-size: 20px;
 
 .social__link {
 	margin-right: 30px;
+	transition: all 0.3s;
 }
 
 .social__link:hover {
