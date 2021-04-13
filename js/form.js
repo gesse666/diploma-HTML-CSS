@@ -23,14 +23,15 @@ $(document).ready(function() {
             data: th.serialize(),
           }).done(() => {
               document.querySelector('.modals').classList.remove('is-open');
-              document.body.style.overflow = 'auto';
+              // document.body.style.overflow = 'auto';
             th.trigger('reset');
-            $('.js-overlay-thank-you').fadeIn();
+            $('.overlay').fadeIn();
           });
           return false;
         }
       });
     });
-  $('.js-close-thank-you').click(function() {
-  $('.js-overlay-thank-you').fadeOut();
+  $('.close-popup').click(function() {
+  $('.overlay').fadeOut();
+  document.body.style.overflow = 'auto';
 });
