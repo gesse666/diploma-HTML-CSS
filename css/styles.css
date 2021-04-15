@@ -1873,8 +1873,8 @@ font-size: 20px;
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	padding: 40px;
 	background-color: #FFF;
 	z-index: 999;
@@ -1882,9 +1882,13 @@ font-size: 20px;
 	display: -ms-flexbox;
 	display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 	border-radius: 10px;
+}
+
+.popup__text {
+	text-align: center;
 }
 
 .close-popup {
@@ -2116,8 +2120,6 @@ font-size: 20px;
 		width: 100%;
 		padding: 5px;
 		color: white;
-		
-
 	}
 }
 
